@@ -1,0 +1,492 @@
+>>> [DEBUG] Starting job...
+>>> [DEBUG] Loaded anaconda3/2022.05.
+>>> [DEBUG] Activated conda env: lm_privacy2
+>>> [DEBUG] which python:
+/home/uqmyu8/.conda/envs/lm_privacy2/bin/python
+>>> [DEBUG] python -V:
+Python 3.9.7
+>>> [DEBUG] conda list | grep ml_swissknife:
+>>> [DEBUG] python -c 'import ml_swissknife':
+>>> ml_swissknife import success!
+>>> [DEBUG] Start actual training...
+base gpt2 model: gpt2
+GPT2LMHeadModel(
+  (transformer): GPT2Model(
+    (wte): Embedding(50257, 768)
+    (wpe): Embedding(1024, 768)
+    (drop): Dropout(p=0.1, inplace=False)
+    (h): ModuleList(
+      (0): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (1): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (2): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (3): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (4): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (5): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (6): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (7): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (8): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (9): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (10): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (11): GPT2Block(
+        (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D()
+          (c_proj): Conv1D()
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D()
+          (c_proj): Conv1D()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (ln_f): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  )
+  (lm_head): Linear(in_features=768, out_features=50257, bias=False)
+)
+Cloning initial embedding into lm_head, checking norms... 
+	lm_head: 890.315185546875, embedding: 890.315185546875
+adapt tokenizer to include [PAD] or other special tokens
+before len(tokenizer) = 50257
+after len(tokenizer) = 50257
+tokenizer.eos_token: <|endoftext|> 50256
+tokenizer.bos_token: <|endoftext|> 50256
+adapt the size of lm_head and input_embeddings to include [PAD]
+use avg-based initialization
+before lm_head.weight.size() = torch.Size([50257, 768]), input_embeddings_before.size() = torch.Size([50257, 768])
+after lm_head.weight.size() = torch.Size([50257, 768]), after input_embeddings_after.size() = torch.Size([50257, 768])
+pre-chunk equal for input_embeddings
+double check: 
+embedding size torch.Size([50257, 768])
+lm_head size torch.Size([50257, 768])
+Number of trainable params: 163.0372 million
+[
+    "transformer.wte.weight",
+    "transformer.wpe.weight",
+    "transformer.h.0.ln_1.weight",
+    "transformer.h.0.ln_1.bias",
+    "transformer.h.0.attn.c_attn.weight",
+    "transformer.h.0.attn.c_attn.bias",
+    "transformer.h.0.attn.c_proj.weight",
+    "transformer.h.0.attn.c_proj.bias",
+    "transformer.h.0.ln_2.weight",
+    "transformer.h.0.ln_2.bias",
+    "transformer.h.0.mlp.c_fc.weight",
+    "transformer.h.0.mlp.c_fc.bias",
+    "transformer.h.0.mlp.c_proj.weight",
+    "transformer.h.0.mlp.c_proj.bias",
+    "transformer.h.1.ln_1.weight",
+    "transformer.h.1.ln_1.bias",
+    "transformer.h.1.attn.c_attn.weight",
+    "transformer.h.1.attn.c_attn.bias",
+    "transformer.h.1.attn.c_proj.weight",
+    "transformer.h.1.attn.c_proj.bias",
+    "transformer.h.1.ln_2.weight",
+    "transformer.h.1.ln_2.bias",
+    "transformer.h.1.mlp.c_fc.weight",
+    "transformer.h.1.mlp.c_fc.bias",
+    "transformer.h.1.mlp.c_proj.weight",
+    "transformer.h.1.mlp.c_proj.bias",
+    "transformer.h.2.ln_1.weight",
+    "transformer.h.2.ln_1.bias",
+    "transformer.h.2.attn.c_attn.weight",
+    "transformer.h.2.attn.c_attn.bias",
+    "transformer.h.2.attn.c_proj.weight",
+    "transformer.h.2.attn.c_proj.bias",
+    "transformer.h.2.ln_2.weight",
+    "transformer.h.2.ln_2.bias",
+    "transformer.h.2.mlp.c_fc.weight",
+    "transformer.h.2.mlp.c_fc.bias",
+    "transformer.h.2.mlp.c_proj.weight",
+    "transformer.h.2.mlp.c_proj.bias",
+    "transformer.h.3.ln_1.weight",
+    "transformer.h.3.ln_1.bias",
+    "transformer.h.3.attn.c_attn.weight",
+    "transformer.h.3.attn.c_attn.bias",
+    "transformer.h.3.attn.c_proj.weight",
+    "transformer.h.3.attn.c_proj.bias",
+    "transformer.h.3.ln_2.weight",
+    "transformer.h.3.ln_2.bias",
+    "transformer.h.3.mlp.c_fc.weight",
+    "transformer.h.3.mlp.c_fc.bias",
+    "transformer.h.3.mlp.c_proj.weight",
+    "transformer.h.3.mlp.c_proj.bias",
+    "transformer.h.4.ln_1.weight",
+    "transformer.h.4.ln_1.bias",
+    "transformer.h.4.attn.c_attn.weight",
+    "transformer.h.4.attn.c_attn.bias",
+    "transformer.h.4.attn.c_proj.weight",
+    "transformer.h.4.attn.c_proj.bias",
+    "transformer.h.4.ln_2.weight",
+    "transformer.h.4.ln_2.bias",
+    "transformer.h.4.mlp.c_fc.weight",
+    "transformer.h.4.mlp.c_fc.bias",
+    "transformer.h.4.mlp.c_proj.weight",
+    "transformer.h.4.mlp.c_proj.bias",
+    "transformer.h.5.ln_1.weight",
+    "transformer.h.5.ln_1.bias",
+    "transformer.h.5.attn.c_attn.weight",
+    "transformer.h.5.attn.c_attn.bias",
+    "transformer.h.5.attn.c_proj.weight",
+    "transformer.h.5.attn.c_proj.bias",
+    "transformer.h.5.ln_2.weight",
+    "transformer.h.5.ln_2.bias",
+    "transformer.h.5.mlp.c_fc.weight",
+    "transformer.h.5.mlp.c_fc.bias",
+    "transformer.h.5.mlp.c_proj.weight",
+    "transformer.h.5.mlp.c_proj.bias",
+    "transformer.h.6.ln_1.weight",
+    "transformer.h.6.ln_1.bias",
+    "transformer.h.6.attn.c_attn.weight",
+    "transformer.h.6.attn.c_attn.bias",
+    "transformer.h.6.attn.c_proj.weight",
+    "transformer.h.6.attn.c_proj.bias",
+    "transformer.h.6.ln_2.weight",
+    "transformer.h.6.ln_2.bias",
+    "transformer.h.6.mlp.c_fc.weight",
+    "transformer.h.6.mlp.c_fc.bias",
+    "transformer.h.6.mlp.c_proj.weight",
+    "transformer.h.6.mlp.c_proj.bias",
+    "transformer.h.7.ln_1.weight",
+    "transformer.h.7.ln_1.bias",
+    "transformer.h.7.attn.c_attn.weight",
+    "transformer.h.7.attn.c_attn.bias",
+    "transformer.h.7.attn.c_proj.weight",
+    "transformer.h.7.attn.c_proj.bias",
+    "transformer.h.7.ln_2.weight",
+    "transformer.h.7.ln_2.bias",
+    "transformer.h.7.mlp.c_fc.weight",
+    "transformer.h.7.mlp.c_fc.bias",
+    "transformer.h.7.mlp.c_proj.weight",
+    "transformer.h.7.mlp.c_proj.bias",
+    "transformer.h.8.ln_1.weight",
+    "transformer.h.8.ln_1.bias",
+    "transformer.h.8.attn.c_attn.weight",
+    "transformer.h.8.attn.c_attn.bias",
+    "transformer.h.8.attn.c_proj.weight",
+    "transformer.h.8.attn.c_proj.bias",
+    "transformer.h.8.ln_2.weight",
+    "transformer.h.8.ln_2.bias",
+    "transformer.h.8.mlp.c_fc.weight",
+    "transformer.h.8.mlp.c_fc.bias",
+    "transformer.h.8.mlp.c_proj.weight",
+    "transformer.h.8.mlp.c_proj.bias",
+    "transformer.h.9.ln_1.weight",
+    "transformer.h.9.ln_1.bias",
+    "transformer.h.9.attn.c_attn.weight",
+    "transformer.h.9.attn.c_attn.bias",
+    "transformer.h.9.attn.c_proj.weight",
+    "transformer.h.9.attn.c_proj.bias",
+    "transformer.h.9.ln_2.weight",
+    "transformer.h.9.ln_2.bias",
+    "transformer.h.9.mlp.c_fc.weight",
+    "transformer.h.9.mlp.c_fc.bias",
+    "transformer.h.9.mlp.c_proj.weight",
+    "transformer.h.9.mlp.c_proj.bias",
+    "transformer.h.10.ln_1.weight",
+    "transformer.h.10.ln_1.bias",
+    "transformer.h.10.attn.c_attn.weight",
+    "transformer.h.10.attn.c_attn.bias",
+    "transformer.h.10.attn.c_proj.weight",
+    "transformer.h.10.attn.c_proj.bias",
+    "transformer.h.10.ln_2.weight",
+    "transformer.h.10.ln_2.bias",
+    "transformer.h.10.mlp.c_fc.weight",
+    "transformer.h.10.mlp.c_fc.bias",
+    "transformer.h.10.mlp.c_proj.weight",
+    "transformer.h.10.mlp.c_proj.bias",
+    "transformer.h.11.ln_1.weight",
+    "transformer.h.11.ln_1.bias",
+    "transformer.h.11.attn.c_attn.weight",
+    "transformer.h.11.attn.c_attn.bias",
+    "transformer.h.11.attn.c_proj.weight",
+    "transformer.h.11.attn.c_proj.bias",
+    "transformer.h.11.ln_2.weight",
+    "transformer.h.11.ln_2.bias",
+    "transformer.h.11.mlp.c_fc.weight",
+    "transformer.h.11.mlp.c_fc.bias",
+    "transformer.h.11.mlp.c_proj.weight",
+    "transformer.h.11.mlp.c_proj.bias",
+    "transformer.ln_f.weight",
+    "transformer.ln_f.bias",
+    "lm_head.weight"
+]
+
+
+total update: 800
+
+
+privacy_args: 
+{
+    "per_example_max_grad_norm": 0.1,
+    "noise_multiplier": 10.906060791015625,
+    "target_epsilon": 3.0,
+    "target_delta": 1e-06,
+    "accounting_mode": "rdp_cks",
+    "non_private": false,
+    "ghost_clipping": true,
+    "detection_error_rate": -1.0
+}
+Training set size: 2361, 
+
+
+{'train': None, 'eval': {'model': {'eval_losses': 3.367382444361205, 'entropy_losses': 3.6782492371884614, 'tok_logprobs': 3.3672408305316175, 'lin_logprobs': 3444.6873774921596, 'ppl': 29.002511925650058}}, 'val': {'model': {'eval_losses': 3.4039849550997623, 'entropy_losses': 3.714509520528022, 'tok_logprobs': 3.4038426560562116, 'lin_logprobs': 3482.1310424804688, 'ppl': 30.08374386999389}}, 'epoch': 0, 'lr': [5e-05], 'eps_rdp_opacus': 0.22283081545103667, 'alpha_rdp_opacus': 63.0, 'eps_gdp': 0.0, 'mu_gdp': 0.0, 'eps_rdp': 0, 'alpha_rdp': 1.1, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': None, 'signal': None, 'noise': None, 'noise_limit': None, 'step': 0, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+{'train': None, 'eval': {'model': {'eval_losses': 3.3445541012671685, 'entropy_losses': 3.650386017701051, 'tok_logprobs': 3.344413102095848, 'lin_logprobs': 3421.3346074148744, 'ppl': 28.347932540887783}}, 'val': {'model': {'eval_losses': 3.3806430589957315, 'entropy_losses': 3.686923188864065, 'tok_logprobs': 3.380501297408537, 'lin_logprobs': 3458.252815621798, 'ppl': 29.389664325939517}}, 'epoch': 3.867061812023709, 'lr': [5e-05], 'eps_rdp_opacus': 0.4423331776626399, 'alpha_rdp_opacus': 61.0, 'eps_gdp': 0.3114077787555636, 'mu_gdp': 0.07970388994918336, 'eps_rdp': 0.3521574078377562, 'alpha_rdp': 52.0, 'eps_low': 0.27327964794795, 'eps_estimate': 0.32330096571508465, 'eps_upper': 0.37332228302778164, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0018275165391595965, 'signal': 25.44841766357422, 'noise': 13925.13671875, 'noise_limit': 13925.514406173828, 'total_flos': 6937061230116864, 'step': 16, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.330540214388174, 'entropy_losses': 3.6222918353653046, 'tok_logprobs': 3.3303997378298194, 'lin_logprobs': 3406.9989236811157, 'ppl': 27.953438474785774}}, 'val': {'model': {'eval_losses': 3.366043798259047, 'entropy_losses': 3.659100960622871, 'tok_logprobs': 3.3659026282178273, 'lin_logprobs': 3443.318386390561, 'ppl': 28.963713800381353}}, 'epoch': 7.867061812023708, 'lr': [5e-05], 'eps_rdp_opacus': 0.618917580216341, 'alpha_rdp_opacus': 45.0, 'eps_gdp': 0.45106841919277924, 'mu_gdp': 0.11271832214002774, 'eps_rdp': 0.5029750895772055, 'alpha_rdp': 39.0, 'eps_low': 0.413216288011264, 'eps_estimate': 0.46324330660917357, 'eps_upper': 0.5132703244770981, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.001447669397020779, 'signal': 20.15884017944336, 'noise': 13925.0302734375, 'noise_limit': 13925.514406173828, 'total_flos': 14111916805324800, 'step': 32, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3225782062844993, 'entropy_losses': 3.6035744785913746, 'tok_logprobs': 3.3224382082603956, 'lin_logprobs': 3398.8542926747314, 'ppl': 27.731756658432047}}, 'val': {'model': {'eval_losses': 3.3578635747315455, 'entropy_losses': 3.6412952265822716, 'tok_logprobs': 3.3577229757626945, 'lin_logprobs': 3434.9505945424567, 'ppl': 28.7277505790642}}, 'epoch': 11.867061812023708, 'lr': [5e-05], 'eps_rdp_opacus': 0.7551603203608824, 'alpha_rdp_opacus': 37.0, 'eps_gdp': 0.5603874908347446, 'mu_gdp': 0.13805118695286397, 'eps_rdp': 0.6208547821579483, 'alpha_rdp': 32.0, 'eps_low': 0.5226795909145345, 'eps_estimate': 0.572712539630717, 'eps_upper': 0.6227454872613175, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0012321395776794415, 'signal': 17.159500122070312, 'noise': 13926.587890625, 'noise_limit': 13925.514406173828, 'total_flos': 21286772380532736, 'step': 48, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3173076294656294, 'entropy_losses': 3.5871151789773776, 'tok_logprobs': 3.3171681716369155, 'lin_logprobs': 3393.4630341341845, 'ppl': 27.585978808782283}}, 'val': {'model': {'eval_losses': 3.35220510256095, 'entropy_losses': 3.625555702464429, 'tok_logprobs': 3.3520649767337245, 'lin_logprobs': 3429.162476586514, 'ppl': 28.56565444263067}}, 'epoch': 15.867061812023708, 'lr': [5e-05], 'eps_rdp_opacus': 0.8706480067938513, 'alpha_rdp_opacus': 32.0, 'eps_gdp': 0.653794458898334, 'mu_gdp': 0.1594077798983667, 'eps_rdp': 0.7214413703444579, 'alpha_rdp': 29.0, 'eps_low': 0.6161893351879477, 'eps_estimate': 0.6662272224306607, 'eps_upper': 0.716265108237985, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0010837398348620543, 'signal': 15.09118938446045, 'noise': 13925.103515625, 'noise_limit': 13925.514406173828, 'total_flos': 28461627955740672, 'step': 64, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3126784020427307, 'entropy_losses': 3.5737159400995346, 'tok_logprobs': 3.3125393706682225, 'lin_logprobs': 3388.727784953237, 'ppl': 27.458572163884636}}, 'val': {'model': {'eval_losses': 3.3469943882989104, 'entropy_losses': 3.612426390190859, 'tok_logprobs': 3.3468546742582923, 'lin_logprobs': 3423.8323284211706, 'ppl': 28.417194107724626}}, 'epoch': 19.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 0.972638796551518, 'alpha_rdp_opacus': 29.0, 'eps_gdp': 0.7369464164558182, 'mu_gdp': 0.17822331599753624, 'eps_rdp': 0.8107763496806624, 'alpha_rdp': 26.0, 'eps_low': 0.6994317109951522, 'eps_estimate': 0.7494726015214861, 'eps_upper': 0.7995134903758534, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0009502647409505594, 'signal': 13.233689308166504, 'noise': 13926.318359375, 'noise_limit': 13925.514406173828, 'total_flos': 35636483530948608, 'step': 80, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3095417193614454, 'entropy_losses': 3.570366260279798, 'tok_logprobs': 3.3094031187655713, 'lin_logprobs': 3385.5193894909276, 'ppl': 27.372578274403494}}, 'val': {'model': {'eval_losses': 3.3438188404333395, 'entropy_losses': 3.609816679227182, 'tok_logprobs': 3.3436795098020804, 'lin_logprobs': 3420.5841484695184, 'ppl': 28.32709707705935}}, 'epoch': 23.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.0651541412368573, 'alpha_rdp_opacus': 27.0, 'eps_gdp': 0.8127678758420235, 'mu_gdp': 0.19523386089044392, 'eps_rdp': 0.8922712156997608, 'alpha_rdp': 24.0, 'eps_low': 0.7753181391364803, 'eps_estimate': 0.825362320765679, 'eps_upper': 0.8754065004429477, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0008524888279236965, 'signal': 11.871405601501465, 'noise': 13925.5849609375, 'noise_limit': 13925.514406173828, 'total_flos': 42811339106156544, 'step': 96, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3059446828766963, 'entropy_losses': 3.560638793971902, 'tok_logprobs': 3.3058064093106996, 'lin_logprobs': 3381.8399592573924, 'ppl': 27.27429498193449}}, 'val': {'model': {'eval_losses': 3.3399917512643533, 'entropy_losses': 3.6003295825816464, 'tok_logprobs': 3.339852792298828, 'lin_logprobs': 3416.6694085793415, 'ppl': 28.218893934252275}}, 'epoch': 27.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.1505276992900644, 'alpha_rdp_opacus': 25.0, 'eps_gdp': 0.8830066291815816, 'mu_gdp': 0.21087667132999974, 'eps_rdp': 0.967786979726744, 'alpha_rdp': 22.0, 'eps_low': 0.8456173828635423, 'eps_estimate': 0.8956651780767154, 'eps_upper': 0.9457129710056155, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0007767019738785374, 'signal': 10.815991401672363, 'noise': 13925.5361328125, 'noise_limit': 13925.514406173828, 'total_flos': 49986194681364480, 'step': 112, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3028691156790675, 'entropy_losses': 3.5504398791818237, 'tok_logprobs': 3.3027310381065176, 'lin_logprobs': 3378.6938520315302, 'ppl': 27.19053991813374}}, 'val': {'model': {'eval_losses': 3.3368859877351853, 'entropy_losses': 3.590447719868389, 'tok_logprobs': 3.3367472058919616, 'lin_logprobs': 3413.4923996221823, 'ppl': 28.13138867829203}}, 'epoch': 31.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.2304513207874597, 'alpha_rdp_opacus': 24.0, 'eps_gdp': 0.9488070083192945, 'mu_gdp': 0.22543664428005547, 'eps_rdp': 1.0383387035323999, 'alpha_rdp': 21.0, 'eps_low': 0.9114651986898571, 'eps_estimate': 0.961516968152244, 'eps_upper': 1.0115687349346925, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0007062779412960852, 'signal': 9.836496353149414, 'noise': 13927.2314453125, 'noise_limit': 13925.514406173828, 'total_flos': 57161050256572416, 'step': 128, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.3007001013738706, 'entropy_losses': 3.5477694513484392, 'tok_logprobs': 3.3005621267610237, 'lin_logprobs': 3376.4750600288417, 'ppl': 27.131627162487014}}, 'val': {'model': {'eval_losses': 3.3346328324958927, 'entropy_losses': 3.5877588906186126, 'tok_logprobs': 3.3344941784305893, 'lin_logprobs': 3411.1875430247824, 'ppl': 28.068075646332947}}, 'epoch': 35.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.3053903611404465, 'alpha_rdp_opacus': 22.0, 'eps_gdp': 1.0109671170043115, 'mu_gdp': 0.23911166984755008, 'eps_rdp': 1.1050549599906647, 'alpha_rdp': 20.0, 'eps_low': 0.9736681229908856, 'eps_estimate': 1.0237217631298845, 'eps_upper': 1.0737754003917737, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0006579690502360009, 'signal': 9.16348934173584, 'noise': 13926.9306640625, 'noise_limit': 13925.514406173828, 'total_flos': 64335905831780352, 'step': 144, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.298487529105183, 'entropy_losses': 3.542552799769937, 'tok_logprobs': 3.298349738795759, 'lin_logprobs': 3374.2117950548836, 'ppl': 27.071662838785613}}, 'val': {'model': {'eval_losses': 3.3324698796037766, 'entropy_losses': 3.5828072535385798, 'tok_logprobs': 3.332331373063367, 'lin_logprobs': 3408.975001600922, 'ppl': 28.00743132998032}}, 'epoch': 39.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.3764998550104504, 'alpha_rdp_opacus': 21.0, 'eps_gdp': 1.0700700950323903, 'mu_gdp': 0.2520458306148216, 'eps_rdp': 1.1684494546067947, 'alpha_rdp': 19.0, 'eps_low': 1.0328090013489402, 'eps_estimate': 1.0828662986984492, 'eps_upper': 1.1329235927651604, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0006212548890083998, 'signal': 8.65059757232666, 'noise': 13924.3935546875, 'noise_limit': 13925.514406173828, 'total_flos': 71510761406988288, 'step': 160, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2964572120311013, 'entropy_losses': 3.5382076661198876, 'tok_logprobs': 3.2963195938382763, 'lin_logprobs': 3372.134941511257, 'ppl': 27.016754538991396}}, 'val': {'model': {'eval_losses': 3.330257875020387, 'entropy_losses': 3.578517405274589, 'tok_logprobs': 3.3301195522285427, 'lin_logprobs': 3406.712303286693, 'ppl': 27.9455472326959}}, 'epoch': 43.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.4444375383521186, 'alpha_rdp_opacus': 20.0, 'eps_gdp': 1.1265575265412375, 'mu_gdp': 0.2643478972932201, 'eps_rdp': 1.2291519791217111, 'alpha_rdp': 18.0, 'eps_low': 1.089330144131118, 'eps_estimate': 1.1393893120456666, 'eps_upper': 1.1894484764595803, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0005846478663589187, 'signal': 8.140839576721191, 'noise': 13924.3466796875, 'noise_limit': 13925.514406173828, 'total_flos': 78685616982196224, 'step': 176, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.294921207598888, 'entropy_losses': 3.53607016332873, 'tok_logprobs': 3.2947838517526726, 'lin_logprobs': 3370.5638799633175, 'ppl': 26.975288538408414}}, 'val': {'model': {'eval_losses': 3.3285364049379944, 'entropy_losses': 3.5760356809394334, 'tok_logprobs': 3.3283983368183025, 'lin_logprobs': 3404.9515100698004, 'ppl': 27.897481193193364}}, 'epoch': 47.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.5096471205087023, 'alpha_rdp_opacus': 20.0, 'eps_gdp': 1.180773423533829, 'mu_gdp': 0.27610237390572795, 'eps_rdp': 1.2876660854333695, 'alpha_rdp': 18.0, 'eps_low': 1.1435755363093019, 'eps_estimate': 1.193637196520784, 'eps_upper': 1.243698852930519, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0005528894208867444, 'signal': 7.699718952178955, 'noise': 13926.3271484375, 'noise_limit': 13925.514406173828, 'total_flos': 85860472557404160, 'step': 192, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.293363811294665, 'entropy_losses': 3.532601162656835, 'tok_logprobs': 3.293226603552008, 'lin_logprobs': 3368.9708063816083, 'ppl': 26.933310020812282}}, 'val': {'model': {'eval_losses': 3.326609963276347, 'entropy_losses': 3.572764883350325, 'tok_logprobs': 3.3264720370478194, 'lin_logprobs': 3402.9808869909066, 'ppl': 27.84379005619414}}, 'epoch': 51.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.571667095613919, 'alpha_rdp_opacus': 19.0, 'eps_gdp': 1.232992040233668, 'mu_gdp': 0.2873764620657195, 'eps_rdp': 1.3431267475421866, 'alpha_rdp': 17.0, 'eps_low': 1.195820036553159, 'eps_estimate': 1.245884763300068, 'eps_upper': 1.2959494858576968, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0005353525621471096, 'signal': 7.455158233642578, 'noise': 13925.6982421875, 'noise_limit': 13925.514406173828, 'total_flos': 93035328132612096, 'step': 208, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.291726700293975, 'entropy_losses': 3.5301407660528867, 'tok_logprobs': 3.2915897413931012, 'lin_logprobs': 3367.2963018383175, 'ppl': 26.889253275423307}}, 'val': {'model': {'eval_losses': 3.3248716866383785, 'entropy_losses': 3.5702250387230223, 'tok_logprobs': 3.3247340526362485, 'lin_logprobs': 3401.2029308881915, 'ppl': 27.79543188854011}}, 'epoch': 55.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.6318745800081738, 'alpha_rdp_opacus': 18.0, 'eps_gdp': 1.2834362436894253, 'mu_gdp': 0.2982246485829792, 'eps_rdp': 1.3976760699575723, 'alpha_rdp': 16.0, 'eps_low': 1.2462887214296738, 'eps_estimate': 1.2963550442757579, 'eps_upper': 1.3464213627234138, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004939347921532836, 'signal': 6.87822961807251, 'noise': 13925.3798828125, 'noise_limit': 13925.514406173828, 'total_flos': 100210183707820032, 'step': 224, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.290809315165311, 'entropy_losses': 3.5282727500620097, 'tok_logprobs': 3.2906725214004475, 'lin_logprobs': 3366.3579827858985, 'ppl': 26.86459678582523}}, 'val': {'model': {'eval_losses': 3.323810178725446, 'entropy_losses': 3.56845657913994, 'tok_logprobs': 3.3236727068164234, 'lin_logprobs': 3400.1171864994235, 'ppl': 27.76594247204058}}, 'epoch': 59.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.690388686319832, 'alpha_rdp_opacus': 18.0, 'eps_gdp': 1.3322900893201712, 'mu_gdp': 0.3086918384011359, 'eps_rdp': 1.4495346272466325, 'alpha_rdp': 16.0, 'eps_low': 1.2951643695629647, 'eps_estimate': 1.3452329215751024, 'eps_upper': 1.3953014688881842, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004986095817731884, 'signal': 6.943215847015381, 'noise': 13925.1552734375, 'noise_limit': 13925.514406173828, 'total_flos': 107385039283027968, 'step': 240, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2891266465614346, 'entropy_losses': 3.5171269898484976, 'tok_logprobs': 3.288990039543273, 'lin_logprobs': 3364.6368036304325, 'ppl': 26.819430582790687}}, 'val': {'model': {'eval_losses': 3.3222258833588145, 'entropy_losses': 3.5580914578793577, 'tok_logprobs': 3.3220885153055972, 'lin_logprobs': 3398.4965460105022, 'ppl': 27.721987845781147}}, 'epoch': 63.86706181202371, 'lr': [5e-05], 'eps_rdp_opacus': 1.7463713095519888, 'alpha_rdp_opacus': 17.0, 'eps_gdp': 1.379707691913642, 'mu_gdp': 0.3188155597967334, 'eps_rdp': 1.5011270259630858, 'alpha_rdp': 15.0, 'eps_low': 1.3426008691594806, 'eps_estimate': 1.392672240293536, 'eps_upper': 1.4427436063341168, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004696384789409914, 'signal': 6.540666103363037, 'noise': 13927.0234375, 'noise_limit': 13925.514406173828, 'total_flos': 114559894858235904, 'step': 256, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.287885818857446, 'entropy_losses': 3.509423589331524, 'tok_logprobs': 3.2877492752676845, 'lin_logprobs': 3363.3675086455532, 'ppl': 26.786172928095127}}, 'val': {'model': {'eval_losses': 3.320873678707686, 'entropy_losses': 3.5505458941638164, 'tok_logprobs': 3.3207364265320813, 'lin_logprobs': 3397.113363297259, 'ppl': 27.684527377695044}}, 'epoch': 67.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 1.8015526782819402, 'alpha_rdp_opacus': 17.0, 'eps_gdp': 1.4258196454132046, 'mu_gdp': 0.3286275570330888, 'eps_rdp': 1.549672642960579, 'alpha_rdp': 15.0, 'eps_low': 1.388732135636232, 'eps_estimate': 1.438805044999642, 'eps_upper': 1.488877949047664, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004601099009300204, 'signal': 6.40664529800415, 'noise': 13924.1630859375, 'noise_limit': 13925.514406173828, 'total_flos': 121734750433443840, 'step': 272, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2865870887660638, 'entropy_losses': 3.509125140918667, 'tok_logprobs': 3.2864506402120517, 'lin_logprobs': 3362.039002996192, 'ppl': 26.75140749962106}}, 'val': {'model': {'eval_losses': 3.3195171023978562, 'entropy_losses': 3.5500301725372663, 'tok_logprobs': 3.3193798918849517, 'lin_logprobs': 3395.7256289622824, 'ppl': 27.646996666098403}}, 'epoch': 71.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 1.8544880684007032, 'alpha_rdp_opacus': 16.0, 'eps_gdp': 1.470737772333175, 'mu_gdp': 0.3381549664200832, 'eps_rdp': 1.598218259958072, 'alpha_rdp': 15.0, 'eps_low': 1.4336668098869696, 'eps_estimate': 1.4837418773396978, 'eps_upper': 1.5338169391577265, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004408795040656477, 'signal': 6.1396565437316895, 'noise': 13925.9287109375, 'noise_limit': 13925.514406173828, 'total_flos': 128909606008651776, 'step': 288, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.284969492197891, 'entropy_losses': 3.504330080618075, 'tok_logprobs': 3.284833017191484, 'lin_logprobs': 3360.3841845878137, 'ppl': 26.708169494908017}}, 'val': {'model': {'eval_losses': 3.317864591958093, 'entropy_losses': 3.5448723579235533, 'tok_logprobs': 3.317727431396552, 'lin_logprobs': 3394.035150246542, 'ppl': 27.601347443776003}}, 'epoch': 75.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 1.9063466256897637, 'alpha_rdp_opacus': 16.0, 'eps_gdp': 1.5145587055206606, 'mu_gdp': 0.3474212016955775, 'eps_rdp': 1.6452265722681012, 'alpha_rdp': 14.0, 'eps_low': 1.4775029862548494, 'eps_estimate': 1.527579923322052, 'eps_upper': 1.5776568544703975, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004464124156914158, 'signal': 6.2167558670043945, 'noise': 13926.037109375, 'noise_limit': 13925.514406173828, 'total_flos': 136084461583859712, 'step': 304, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.284068590423967, 'entropy_losses': 3.4987843356405204, 'tok_logprobs': 3.2839322226774064, 'lin_logprobs': 3359.462655234935, 'ppl': 26.684118892873478}}, 'val': {'model': {'eval_losses': 3.3167177692788545, 'entropy_losses': 3.5389334514289716, 'tok_logprobs': 3.3165807009766906, 'lin_logprobs': 3392.862050541112, 'ppl': 27.569711736290632}}, 'epoch': 79.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 1.957734522661596, 'alpha_rdp_opacus': 15.0, 'eps_gdp': 1.5573666353197486, 'mu_gdp': 0.3564466319950725, 'eps_rdp': 1.6904690655844359, 'alpha_rdp': 14.0, 'eps_low': 1.5203244799445161, 'eps_estimate': 1.570403028154896, 'eps_upper': 1.62048162384327, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004331153608451357, 'signal': 6.031772613525391, 'noise': 13926.48046875, 'noise_limit': 13925.514406173828, 'total_flos': 143259317159067648, 'step': 320, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.283647075776131, 'entropy_losses': 3.502339716775227, 'tok_logprobs': 3.2835109219527707, 'lin_logprobs': 3359.031680527554, 'ppl': 26.672873516107547}}, 'val': {'model': {'eval_losses': 3.316291603885713, 'entropy_losses': 3.5424682346752827, 'tok_logprobs': 3.3161547366365216, 'lin_logprobs': 3392.4262955462345, 'ppl': 27.557964982457506}}, 'epoch': 83.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.006280139659089, 'alpha_rdp_opacus': 15.0, 'eps_gdp': 1.5992354483656999, 'mu_gdp': 0.3652491088745627, 'eps_rdp': 1.7357115589007708, 'alpha_rdp': 14.0, 'eps_low': 1.5622065810802437, 'eps_estimate': 1.6122873355309544, 'eps_upper': 1.6623680834609103, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0004174922589999875, 'signal': 5.814106464385986, 'noise': 13926.26171875, 'noise_limit': 13925.514406173828, 'total_flos': 150434172734275584, 'step': 336, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2825060762384886, 'entropy_losses': 3.498943223552337, 'tok_logprobs': 3.28237006661653, 'lin_logprobs': 3357.8645693324374, 'ppl': 26.642457135595997}}, 'val': {'model': {'eval_losses': 3.3153378201312704, 'entropy_losses': 3.5392195244724682, 'tok_logprobs': 3.315201118629165, 'lin_logprobs': 3391.4507476306353, 'ppl': 27.531693173955443}}, 'epoch': 87.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.054825756656582, 'alpha_rdp_opacus': 15.0, 'eps_gdp': 1.6402304151171208, 'mu_gdp': 0.37384438153688193, 'eps_rdp': 1.7803849664295512, 'alpha_rdp': 13.0, 'eps_low': 1.6032131271555607, 'eps_estimate': 1.653295840722395, 'eps_upper': 1.7033785474482612, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00040757443221620804, 'signal': 5.676074981689453, 'noise': 13926.474609375, 'noise_limit': 13925.514406173828, 'total_flos': 157609028309483520, 'step': 352, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2813690631620345, 'entropy_losses': 3.493399567582361, 'tok_logprobs': 3.2812330581012312, 'lin_logprobs': 3356.7014168906812, 'ppl': 26.61218152858618}}, 'val': {'model': {'eval_losses': 3.314185838230321, 'entropy_losses': 3.533758895933651, 'tok_logprobs': 3.3140490700923806, 'lin_logprobs': 3390.27220178823, 'ppl': 27.49999542283975}}, 'epoch': 91.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.103308927657567, 'alpha_rdp_opacus': 14.0, 'eps_gdp': 1.680409537399615, 'mu_gdp': 0.38224642794894137, 'eps_rdp': 1.8223340985838479, 'alpha_rdp': 13.0, 'eps_low': 1.6434033489497712, 'eps_estimate': 1.693487795130636, 'eps_upper': 1.7435722341809456, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00040785511149870035, 'signal': 5.679677963256836, 'noise': 13925.724609375, 'noise_limit': 13925.514406173828, 'total_flos': 164783883884691456, 'step': 368, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2801252129257366, 'entropy_losses': 3.489384810338397, 'tok_logprobs': 3.279989293823128, 'lin_logprobs': 3355.4290592097896, 'ppl': 26.579100538467276}}, 'val': {'model': {'eval_losses': 3.3129098415374756, 'entropy_losses': 3.5297777406356206, 'tok_logprobs': 3.312773294809692, 'lin_logprobs': 3388.96707503522, 'ppl': 27.46492789740817}}, 'epoch': 95.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.1485514209739014, 'alpha_rdp_opacus': 14.0, 'eps_gdp': 1.7198246361750122, 'mu_gdp': 0.39046772178088784, 'eps_rdp': 1.8642832307381445, 'alpha_rdp': 13.0, 'eps_low': 1.682828981883997, 'eps_estimate': 1.7329149534099382, 'eps_upper': 1.7830009175454116, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00042269113832361406, 'signal': 5.885929107666016, 'noise': 13924.8935546875, 'noise_limit': 13925.514406173828, 'total_flos': 171958739459899392, 'step': 384, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2798902432978365, 'entropy_losses': 3.4937551743099786, 'tok_logprobs': 3.2797545740676712, 'lin_logprobs': 3355.1889324666777, 'ppl': 26.572855990772087}}, 'val': {'model': {'eval_losses': 3.3125735091381387, 'entropy_losses': 3.5347896957766385, 'tok_logprobs': 3.312437067960594, 'lin_logprobs': 3388.6231299228357, 'ppl': 27.4556921055459}}, 'epoch': 99.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.193793914290236, 'alpha_rdp_opacus': 14.0, 'eps_gdp': 1.7585222382880765, 'mu_gdp': 0.3985194497459168, 'eps_rdp': 1.9062323628924411, 'alpha_rdp': 13.0, 'eps_low': 1.7215355987557628, 'eps_estimate': 1.7716229061819448, 'eps_upper': 1.8217109543787637, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003972207534737801, 'signal': 5.53154182434082, 'noise': 13925.611328125, 'noise_limit': 13925.514406173828, 'total_flos': 179133595035107328, 'step': 400, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2794405944031197, 'entropy_losses': 3.494980759622983, 'tok_logprobs': 3.2793050187641937, 'lin_logprobs': 3354.729026657706, 'ppl': 26.56091022134865}}, 'val': {'model': {'eval_losses': 3.311952934890497, 'entropy_losses': 3.536235944436575, 'tok_logprobs': 3.311816589544213, 'lin_logprobs': 3387.9883642978357, 'ppl': 27.43865909574427}}, 'epoch': 103.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.239036407606571, 'alpha_rdp_opacus': 14.0, 'eps_gdp': 1.7965443058523498, 'mu_gdp': 0.4064116901601378, 'eps_rdp': 1.9481814950467378, 'alpha_rdp': 13.0, 'eps_low': 1.759566889594132, 'eps_estimate': 1.8096561084940335, 'eps_upper': 1.8597453194346334, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003749111842244823, 'signal': 5.220958232879639, 'noise': 13925.853515625, 'noise_limit': 13925.514406173828, 'total_flos': 186308450610315264, 'step': 416, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2787754638220674, 'entropy_losses': 3.4934356572087806, 'tok_logprobs': 3.2786399140221625, 'lin_logprobs': 3354.0486198616713, 'ppl': 26.5432496216534}}, 'val': {'model': {'eval_losses': 3.3110024127803865, 'entropy_losses': 3.53427942080659, 'tok_logprobs': 3.3108661372772916, 'lin_logprobs': 3387.016050244941, 'ppl': 27.41259043498394}}, 'epoch': 107.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.2839191146630324, 'alpha_rdp_opacus': 13.0, 'eps_gdp': 1.8339288411355896, 'mu_gdp': 0.4141535608585919, 'eps_rdp': 1.9870114800500578, 'alpha_rdp': 12.0, 'eps_low': 1.7969595937471536, 'eps_estimate': 1.847050536108117, 'eps_upper': 1.8971414701993197, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00039176314430011374, 'signal': 5.456048965454102, 'noise': 13926.9072265625, 'noise_limit': 13925.514406173828, 'total_flos': 193483306185523200, 'step': 432, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2778809113314504, 'entropy_losses': 3.492261727426736, 'tok_logprobs': 3.27774548170491, 'lin_logprobs': 3353.1336385528675, 'ppl': 26.519515908703987}}, 'val': {'model': {'eval_losses': 3.3100304584034155, 'entropy_losses': 3.5331008793117276, 'tok_logprobs': 3.3098942936875537, 'lin_logprobs': 3386.0218625928533, 'ppl': 27.38595959180534}}, 'epoch': 111.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.325868246817329, 'alpha_rdp_opacus': 13.0, 'eps_gdp': 1.8707103920030388, 'mu_gdp': 0.4217533426599995, 'eps_rdp': 2.025676959912887, 'alpha_rdp': 12.0, 'eps_low': 1.833748834446453, 'eps_estimate': 1.8838413251593937, 'eps_upper': 1.9339338073185937, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003760782401655667, 'signal': 5.237247943878174, 'noise': 13925.953125, 'noise_limit': 13925.514406173828, 'total_flos': 200658161760731136, 'step': 448, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.277524092718692, 'entropy_losses': 3.4976861888888555, 'tok_logprobs': 3.277388758335155, 'lin_logprobs': 3352.7687034470205, 'ppl': 26.51005493985169}}, 'val': {'model': {'eval_losses': 3.309679566836748, 'entropy_losses': 3.53860133913975, 'tok_logprobs': 3.3095434899974285, 'lin_logprobs': 3385.662979876409, 'ppl': 27.37635177528895}}, 'epoch': 115.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.3678173789716257, 'alpha_rdp_opacus': 13.0, 'eps_gdp': 1.9069204772088777, 'mu_gdp': 0.42921858314606376, 'eps_rdp': 2.0643424397757166, 'alpha_rdp': 12.0, 'eps_low': 1.8699658353403859, 'eps_estimate': 1.9200597115502915, 'eps_upper': 1.970153578948282, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003796775019111201, 'signal': 5.287534236907959, 'noise': 13926.3828125, 'noise_limit': 13925.514406173828, 'total_flos': 207833017335939072, 'step': 464, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2769117389528555, 'entropy_losses': 3.4972885592081817, 'tok_logprobs': 3.2767765234963204, 'lin_logprobs': 3352.142375987063, 'ppl': 26.49382637719458}}, 'val': {'model': {'eval_losses': 3.308927602455264, 'entropy_losses': 3.5380951790413855, 'tok_logprobs': 3.3087916126053303, 'lin_logprobs': 3384.8938218413805, 'ppl': 27.355773471904218}}, 'epoch': 119.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.4097665111259223, 'alpha_rdp_opacus': 13.0, 'eps_gdp': 1.94258794655861, 'mu_gdp': 0.43655618446077016, 'eps_rdp': 2.1030079196385456, 'alpha_rdp': 12.0, 'eps_low': 1.9056393733181711, 'eps_estimate': 1.9557351880016474, 'eps_upper': 2.00583099350555, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003679685766392137, 'signal': 5.123732089996338, 'noise': 13924.3740234375, 'noise_limit': 13925.514406173828, 'total_flos': 215007872911147008, 'step': 480, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2758481528169368, 'entropy_losses': 3.491783313175404, 'tok_logprobs': 3.2757129719159583, 'lin_logprobs': 3351.0543646043348, 'ppl': 26.465662890574226}}, 'val': {'model': {'eval_losses': 3.3078262727768695, 'entropy_losses': 3.532556979460518, 'tok_logprobs': 3.307690307800709, 'lin_logprobs': 3383.7671748927382, 'ppl': 27.325662330894342}}, 'epoch': 123.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.451715643280219, 'alpha_rdp_opacus': 13.0, 'eps_gdp': 1.9777392877422078, 'mu_gdp': 0.443772478037989, 'eps_rdp': 2.141673399501375, 'alpha_rdp': 12.0, 'eps_low': 1.9407970685012106, 'eps_estimate': 1.9908939631988642, 'eps_upper': 2.0409908485088453, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003724364608716197, 'signal': 5.186599254608154, 'noise': 13926.1318359375, 'noise_limit': 13925.514406173828, 'total_flos': 222182728486354944, 'step': 496, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.274414218882079, 'entropy_losses': 3.4861556415376067, 'tok_logprobs': 3.274279022312043, 'lin_logprobs': 3349.587430345542, 'ppl': 26.427740074351433}}, 'val': {'model': {'eval_losses': 3.3065149627748083, 'entropy_losses': 3.526885962317818, 'tok_logprobs': 3.3063790474026473, 'lin_logprobs': 3382.4257702436603, 'ppl': 27.289853400002738}}, 'epoch': 127.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.493250860880016, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.012398889191356, 'mu_gdp': 0.45087328856011094, 'eps_rdp': 2.180056517242911, 'alpha_rdp': 10.9, 'eps_low': 1.9754622521244039, 'eps_estimate': 2.0255607783724074, 'eps_upper': 2.0756592949139456, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003586746229900759, 'signal': 4.99414587020874, 'noise': 13923.8896484375, 'noise_limit': 13925.514406173828, 'total_flos': 229357584061562880, 'step': 512, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.27410368252826, 'entropy_losses': 3.488565664764887, 'tok_logprobs': 3.273968634964541, 'lin_logprobs': 3349.2699127744177, 'ppl': 26.419534574428024}}, 'val': {'model': {'eval_losses': 3.3062558779951003, 'entropy_losses': 3.5294359964407094, 'tok_logprobs': 3.3061200502673826, 'lin_logprobs': 3382.160810626921, 'ppl': 27.282783930181896}}, 'epoch': 131.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.5319163407428453, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.0465892664334118, 'mu_gdp': 0.4578639889858565, 'eps_rdp': 2.2151211298366986, 'alpha_rdp': 10.9, 'eps_low': 2.009657715938688, 'eps_estimate': 2.059757729600291, 'eps_upper': 2.1098577332601622, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003553396958617064, 'signal': 4.948079586029053, 'noise': 13924.927734375, 'noise_limit': 13925.514406173828, 'total_flos': 236532439636770816, 'step': 528, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.273704942409283, 'entropy_losses': 3.487505597415491, 'tok_logprobs': 3.2735698978207957, 'lin_logprobs': 3348.862009793627, 'ppl': 26.40900214605892}}, 'val': {'model': {'eval_losses': 3.3057794043275175, 'entropy_losses': 3.528111615452199, 'tok_logprobs': 3.305643613151461, 'lin_logprobs': 3381.6734238921617, 'ppl': 27.26978749853542}}, 'epoch': 135.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.5705818206056747, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.080331257957855, 'mu_gdp': 0.4647495481257321, 'eps_rdp': 2.250185742430485, 'alpha_rdp': 10.9, 'eps_low': 2.0434044363545887, 'eps_estimate': 2.093505801590095, 'eps_upper': 2.1436071565517323, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003680343127432047, 'signal': 5.124927043914795, 'noise': 13925.1337890625, 'noise_limit': 13925.514406173828, 'total_flos': 243707295211978752, 'step': 544, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.273433392193155, 'entropy_losses': 3.4865773998820297, 'tok_logprobs': 3.2732984806352987, 'lin_logprobs': 3348.5843475232414, 'ppl': 26.401831749423877}}, 'val': {'model': {'eval_losses': 3.305474226592017, 'entropy_losses': 3.526608570214325, 'tok_logprobs': 3.305338510476753, 'lin_logprobs': 3381.361297107134, 'ppl': 27.261466636274562}}, 'epoch': 139.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.609247300468504, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.113644195473806, 'mu_gdp': 0.47153457196276044, 'eps_rdp': 2.2852503550242727, 'alpha_rdp': 10.9, 'eps_low': 2.0767215622811745, 'eps_estimate': 2.1268241512140493, 'eps_upper': 2.1769271854415795, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003506170760492735, 'signal': 4.882309913635254, 'noise': 13924.90625, 'noise_limit': 13925.514406173828, 'total_flos': 250882150787186688, 'step': 560, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2731807932631516, 'entropy_losses': 3.4867503909681155, 'tok_logprobs': 3.2730460552407625, 'lin_logprobs': 3348.3261149963596, 'ppl': 26.395163517203457}}, 'val': {'model': {'eval_losses': 3.305382625001376, 'entropy_losses': 3.5264787742194224, 'tok_logprobs': 3.305247084991003, 'lin_logprobs': 3381.2677722368085, 'ppl': 27.258969556937437}}, 'epoch': 143.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.647912780331333, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.146546052537808, 'mu_gdp': 0.47822333969510017, 'eps_rdp': 2.320314967618059, 'alpha_rdp': 10.9, 'eps_low': 2.109627422317464, 'eps_estimate': 2.159731762344738, 'eps_upper': 2.2098360914863067, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00034361244747677805, 'signal': 4.785112380981445, 'noise': 13925.8994140625, 'noise_limit': 13925.514406173828, 'total_flos': 258057006362394624, 'step': 576, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.272846439833282, 'entropy_losses': 3.4853738709057294, 'tok_logprobs': 3.272711747751428, 'lin_logprobs': 3347.9841107330867, 'ppl': 26.386339678972007}}, 'val': {'model': {'eval_losses': 3.304727050124622, 'entropy_losses': 3.5250378958126323, 'tok_logprobs': 3.304591544821142, 'lin_logprobs': 3380.597152960105, 'ppl': 27.241105117708297}}, 'epoch': 147.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.6865782601941626, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.1790535748225737, 'mu_gdp': 0.4848198353019054, 'eps_rdp': 2.3550194482931976, 'alpha_rdp': 10.7, 'eps_low': 2.1421385463690927, 'eps_estimate': 2.1922438742767407, 'eps_upper': 2.2423498243952604, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003515637669733336, 'signal': 4.895628452301025, 'noise': 13925.29296875, 'noise_limit': 13925.514406173828, 'total_flos': 265231861937602560, 'step': 592, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.272038725541911, 'entropy_losses': 3.479233770116582, 'tok_logprobs': 3.2719040830015453, 'lin_logprobs': 3347.1578784792227, 'ppl': 26.365035660254758}}, 'val': {'model': {'eval_losses': 3.303655638069403, 'entropy_losses': 3.5189479720491312, 'tok_logprobs': 3.3035202232546976, 'lin_logprobs': 3379.5012006915986, 'ppl': 27.211934299061568}}, 'epoch': 151.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.7252437400569915, 'alpha_rdp_opacus': 12.0, 'eps_gdp': 2.211182394726723, 'mu_gdp': 0.4913277752938442, 'eps_rdp': 2.3893163891158062, 'alpha_rdp': 10.6, 'eps_low': 2.1742708764978738, 'eps_estimate': 2.224377700532359, 'eps_upper': 2.274484513156689, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003582483890556776, 'signal': 4.988908290863037, 'noise': 13925.8359375, 'noise_limit': 13925.514406173828, 'total_flos': 272406717512810496, 'step': 608, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2715392522914435, 'entropy_losses': 3.4777139120924416, 'tok_logprobs': 3.2714046941102604, 'lin_logprobs': 3346.646995407706, 'ppl': 26.351870318336594}}, 'val': {'model': {'eval_losses': 3.3031709800001052, 'entropy_losses': 3.5173054431737327, 'tok_logprobs': 3.3030355934707836, 'lin_logprobs': 3379.0054141185324, 'ppl': 27.198749010958558}}, 'epoch': 155.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.763026008123782, 'alpha_rdp_opacus': 10.9, 'eps_gdp': 2.2429471325674752, 'mu_gdp': 0.49775063319721635, 'eps_rdp': 2.4232331075905553, 'alpha_rdp': 10.5, 'eps_low': 2.206038681150708, 'eps_estimate': 2.2561468917637924, 'eps_upper': 2.3062550906686075, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00034187642147785643, 'signal': 4.760868549346924, 'noise': 13925.7001953125, 'noise_limit': 13925.514406173828, 'total_flos': 279581573088018432, 'step': 624, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.27098521451369, 'entropy_losses': 3.480840800906339, 'tok_logprobs': 3.2708506739642385, 'lin_logprobs': 3346.0802443856405, 'ppl': 26.337274430375796}}, 'val': {'model': {'eval_losses': 3.3026113451504315, 'entropy_losses': 3.5199664311534127, 'tok_logprobs': 3.3024760322323683, 'lin_logprobs': 3378.432978395556, 'ppl': 27.18353190155402}}, 'epoch': 159.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.798090620717569, 'alpha_rdp_opacus': 10.9, 'eps_gdp': 2.27436148623024, 'mu_gdp': 0.5040916612296432, 'eps_rdp': 2.4567786914541783, 'alpha_rdp': 10.4, 'eps_low': 2.237455803028849, 'eps_estimate': 2.2875652882808386, 'eps_upper': 2.3376747615471207, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.000335789190522571, 'signal': 4.675585746765137, 'noise': 13924.169921875, 'noise_limit': 13925.514406173828, 'total_flos': 286756428663226368, 'step': 640, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2706843447941605, 'entropy_losses': 3.476799332464198, 'tok_logprobs': 3.2705499237533333, 'lin_logprobs': 3345.7725764448924, 'ppl': 26.32935153394434}}, 'val': {'model': {'eval_losses': 3.3021529834778582, 'entropy_losses': 3.5157038436138635, 'tok_logprobs': 3.302017726456818, 'lin_logprobs': 3377.9641363425335, 'ppl': 27.171074867536742}}, 'epoch': 163.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.833155233311356, 'alpha_rdp_opacus': 10.9, 'eps_gdp': 2.3054383108454846, 'mu_gdp': 0.5103539095512964, 'eps_rdp': 2.489962613339081, 'alpha_rdp': 10.3, 'eps_low': 2.2685350183138997, 'eps_estimate': 2.3186456717432793, 'eps_upper': 2.3687568049173215, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00036093662104256467, 'signal': 5.026188373565674, 'noise': 13925.404296875, 'noise_limit': 13925.514406173828, 'total_flos': 293931284238434304, 'step': 656, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2697441013910438, 'entropy_losses': 3.476787040189735, 'tok_logprobs': 3.269609724211258, 'lin_logprobs': 3344.810757763497, 'ppl': 26.304607169541857}}, 'val': {'model': {'eval_losses': 3.3014869924451484, 'entropy_losses': 3.5161250560762487, 'tok_logprobs': 3.3013516856433607, 'lin_logprobs': 3377.2827798812114, 'ppl': 27.152985199772765}}, 'epoch': 167.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.868219845905143, 'alpha_rdp_opacus': 10.9, 'eps_gdp': 2.3361896898177332, 'mu_gdp': 0.5165402434150939, 'eps_rdp': 2.522794751975639, 'alpha_rdp': 10.2, 'eps_low': 2.2992885392830287, 'eps_estimate': 2.3494008644099593, 'eps_upper': 2.3995131769213733, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003736376504441438, 'signal': 5.203327178955078, 'noise': 13926.1318359375, 'noise_limit': 13925.514406173828, 'total_flos': 301106139813642240, 'step': 672, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2690503058894986, 'entropy_losses': 3.472020930167886, 'tok_logprobs': 3.268915890094795, 'lin_logprobs': 3344.1009674619177, 'ppl': 26.2863634808441}}, 'val': {'model': {'eval_losses': 3.300687944302793, 'entropy_losses': 3.5114822618554355, 'tok_logprobs': 3.3005526660156543, 'lin_logprobs': 3376.4653720543033, 'ppl': 27.1312973233721}}, 'epoch': 171.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.90328445849893, 'alpha_rdp_opacus': 10.9, 'eps_gdp': 2.366626998327221, 'mu_gdp': 0.522653358489502, 'eps_rdp': 2.5552854148043194, 'alpha_rdp': 10.1, 'eps_low': 2.3297280571356827, 'eps_estimate': 2.3798413450959384, 'eps_upper': 2.429954708004228, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00033824472581350416, 'signal': 4.710486888885498, 'noise': 13926.2685546875, 'noise_limit': 13925.514406173828, 'total_flos': 308280995388850176, 'step': 688, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2678067479082333, 'entropy_losses': 3.4658992209435118, 'tok_logprobs': 3.267672302657764, 'lin_logprobs': 3342.8287716663867, 'ppl': 26.253695180411874}}, 'val': {'model': {'eval_losses': 3.2997212370888134, 'entropy_losses': 3.5055991501970967, 'tok_logprobs': 3.299585915575796, 'lin_logprobs': 3375.476396404329, 'ppl': 27.105081975849316}}, 'epoch': 175.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.9382108443198014, 'alpha_rdp_opacus': 10.8, 'eps_gdp': 2.396760960259438, 'mu_gdp': 0.5286957945864402, 'eps_rdp': 2.5874453621138853, 'alpha_rdp': 10.0, 'eps_low': 2.359863739535294, 'eps_estimate': 2.409978490780742, 'eps_upper': 2.460093228859853, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00032801863735137184, 'signal': 4.567807197570801, 'noise': 13925.4501953125, 'noise_limit': 13925.514406173828, 'total_flos': 315455850964058112, 'step': 704, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2671363524638624, 'entropy_losses': 3.4607909044761307, 'tok_logprobs': 3.2670019913725947, 'lin_logprobs': 3342.143033154122, 'ppl': 26.236100721046682}}, 'val': {'model': {'eval_losses': 3.298981701741453, 'entropy_losses': 3.500271692166168, 'tok_logprobs': 3.298846529057691, 'lin_logprobs': 3374.7199937163805, 'ppl': 27.08504421986273}}, 'epoch': 179.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 2.972781602697731, 'alpha_rdp_opacus': 10.7, 'eps_gdp': 2.4266016993727835, 'mu_gdp': 0.5346699479926088, 'eps_rdp': 2.619285832817411, 'alpha_rdp': 9.9, 'eps_low': 2.3897058147048407, 'eps_estimate': 2.4398219290326066, 'eps_upper': 2.489938029879401, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003331629437843083, 'signal': 4.639328479766846, 'noise': 13925.103515625, 'noise_limit': 13925.514406173828, 'total_flos': 322630706539266048, 'step': 720, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2671783850611753, 'entropy_losses': 3.4637616658211487, 'tok_logprobs': 3.2670441006553075, 'lin_logprobs': 3342.1861112861225, 'ppl': 26.23720351567985}}, 'val': {'model': {'eval_losses': 3.299014091491699, 'entropy_losses': 3.503287573247743, 'tok_logprobs': 3.298879008426692, 'lin_logprobs': 3374.7532228563655, 'ppl': 27.08592151188798}}, 'epoch': 183.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 3.007006194158298, 'alpha_rdp_opacus': 10.6, 'eps_gdp': 2.4561587854047136, 'mu_gdp': 0.540578082574063, 'eps_rdp': 2.6508185720097437, 'alpha_rdp': 9.8, 'eps_low': 2.419264268313212, 'eps_estimate': 2.4693815471123988, 'eps_upper': 2.519498914512287, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.00034286218637224434, 'signal': 4.774276256561279, 'noise': 13924.767578125, 'noise_limit': 13925.514406173828, 'total_flos': 329805562114473984, 'step': 736, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+{'train': None, 'eval': {'model': {'eval_losses': 3.2670240983313557, 'entropy_losses': 3.4683658436425473, 'tok_logprobs': 3.2668898350445046, 'lin_logprobs': 3342.02830281138, 'ppl': 26.233155775614122}}, 'val': {'model': {'eval_losses': 3.298852557041606, 'entropy_losses': 3.508412458898518, 'tok_logprobs': 3.298717522338277, 'lin_logprobs': 3374.5880166976176, 'ppl': 27.081546555813862}}, 'epoch': 187.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 3.040894465338313, 'alpha_rdp_opacus': 10.5, 'eps_gdp': 2.4854412757161355, 'mu_gdp': 0.5464223397999775, 'eps_rdp': 2.6820558604405225, 'alpha_rdp': 9.7, 'eps_low': 2.448547881817299, 'eps_estimate': 2.498666437527238, 'eps_upper': 2.5487849791833868, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003726767458465544, 'signal': 5.189737319946289, 'noise': 13925.5732421875, 'noise_limit': 13925.514406173828, 'total_flos': 336980417689681920, 'step': 752, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.266707834804357, 'entropy_losses': 3.4682772966797635, 'tok_logprobs': 3.2665737348937776, 'lin_logprobs': 3341.7049293654795, 'ppl': 26.22486049706039}}, 'val': {'model': {'eval_losses': 3.2984461256715116, 'entropy_losses': 3.5088089030099634, 'tok_logprobs': 3.298311166840845, 'lin_logprobs': 3374.172330262231, 'ppl': 27.070542002192298}}, 'epoch': 191.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 3.0744566695421387, 'alpha_rdp_opacus': 10.4, 'eps_gdp': 2.5144577529888523, 'mu_gdp': 0.5522047478114559, 'eps_rdp': 2.713010546068487, 'alpha_rdp': 9.6, 'eps_low': 2.47756552022915, 'eps_estimate': 2.5276851619816667, 'eps_upper': 2.577804789421747, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003292530765828582, 'signal': 4.585124969482422, 'noise': 13925.837890625, 'noise_limit': 13925.514406173828, 'total_flos': 344155273264889856, 'step': 768, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.26625088209747, 'entropy_losses': 3.4641056651966426, 'tok_logprobs': 3.266116861956347, 'lin_logprobs': 3341.2375567036293, 'ppl': 26.212879713602714}}, 'val': {'model': {'eval_losses': 3.2977943518122688, 'entropy_losses': 3.5047197162497588, 'tok_logprobs': 3.2976594394034744, 'lin_logprobs': 3373.5056102314934, 'ppl': 27.052903879217876}}, 'epoch': 195.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 3.1077034886119987, 'alpha_rdp_opacus': 10.3, 'eps_gdp': 2.5432163594251054, 'mu_gdp': 0.5579272296442835, 'eps_rdp': 2.7436960778569643, 'alpha_rdp': 9.5, 'eps_low': 2.5063250168098987, 'eps_estimate': 2.5564456598604988, 'eps_upper': 2.6065662883581093, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.0003366063383766413, 'signal': 4.68731689453125, 'noise': 13925.21875, 'noise_limit': 13925.514406173828, 'total_flos': 351330128840097792, 'step': 784, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2660948213283305, 'entropy_losses': 3.465795179293381, 'tok_logprobs': 3.2659608597884797, 'lin_logprobs': 3341.0779587393595, 'ppl': 26.20878923062351}}, 'val': {'model': {'eval_losses': 3.2977238600371312, 'entropy_losses': 3.506854344815625, 'tok_logprobs': 3.2975890572198754, 'lin_logprobs': 3373.433600754034, 'ppl': 27.050996939213388}}, 'epoch': 199.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 3.140646056231359, 'alpha_rdp_opacus': 10.2, 'eps_gdp': 2.571724827839347, 'mu_gdp': 0.5635916107001386, 'eps_rdp': 2.7741265420191037, 'alpha_rdp': 9.4, 'eps_low': 2.534833835409299, 'eps_estimate': 2.5849558668637043, 'eps_upper': 2.635077975066349, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.000316838343262866, 'signal': 4.412321090698242, 'noise': 13926.095703125, 'noise_limit': 13925.514406173828, 'total_flos': 358504984415305728, 'step': 800, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/best
+{'train': None, 'eval': {'model': {'eval_losses': 3.2660948213283305, 'entropy_losses': 3.465795179293381, 'tok_logprobs': 3.2659608597884797, 'lin_logprobs': 3341.0779587393595, 'ppl': 26.20878923062351}}, 'val': {'model': {'eval_losses': 3.2977238600371312, 'entropy_losses': 3.506854344815625, 'tok_logprobs': 3.2975890572198754, 'lin_logprobs': 3373.433600754034, 'ppl': 27.050996939213388}}, 'epoch': 199.8670618120237, 'lr': [5e-05], 'eps_rdp_opacus': 3.140646056231359, 'alpha_rdp_opacus': 10.2, 'eps_gdp': 2.571724827839347, 'mu_gdp': 0.5635916107001386, 'eps_rdp': 2.7741265420191037, 'alpha_rdp': 9.4, 'eps_low': 2.534833835409299, 'eps_estimate': 2.5849558668637043, 'eps_upper': 2.635077975066349, 'med_clip': None, 'max_clip': None, 'min_clip': None, 'snr': 0.000316838343262866, 'signal': 4.412321090698242, 'noise': 13926.095703125, 'noise_limit': 13925.514406173828, 'total_flos': 358504984415305728, 'step': 800, 'num_params': 163037184, 'num_non_embedding_params': 85056000}
+Saving model checkpoint to %s ./output/wikitext2_experiment/checkpoint-800
+>>> [DEBUG] Job finished.
